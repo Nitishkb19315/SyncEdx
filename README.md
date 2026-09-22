@@ -1,8 +1,8 @@
 <div align="center" markdown="1">
 
-<img src=".github/edu-logo.svg" alt="Frappe Education Logo" width="80">
+<img src=".github/edu-logo.svg" alt="EduNex Logo" width="80">
 
-<h1>Frappe Education</h1>
+<h1>EduNex</h1>
 
 **Empowering Schools with Smarter Management**
 
@@ -21,9 +21,9 @@
 	<a href="https://docs.frappe.io/education">Documentation</a>
 </div>
 
-## Frappe Education
+## EduNex
 
-Frappe Education is an open-source and user-friendly Education Management System
+EduNex is an open-source and user-friendly Education Management System
 designed to streamline the administrative and academic processes of educational
 institutions. It is a powerful module based on the ERPNext software.
 
@@ -32,7 +32,7 @@ institutions. It is a powerful module based on the ERPNext software.
 All the tools to manage which are available in the market were just not good
 enough.They were way too scatered, or too expensive or too complex to use. We
 wanted to create a tool that is easy to use, affordable and can be customized as
-per the needs of the institution. Frappe Education is dedicated to making
+per the needs of the institution. EduNex is dedicated to making
 education management more efficient and less time-consuming.
 
 ### Key Features
@@ -124,7 +124,7 @@ with an ability to manage and control multiple Frappe deployments.
 
 ### Self Hosting
 
-Follow these steps to set up Frappe Education in production:
+Follow these steps to set up EduNex in production:
 
 **Step 1**: Download the easy install script
 
@@ -147,9 +147,9 @@ python3 ./easy-install.py deploy \
 Replace the following parameters with your values:
 
 - `your_email.example.com`: Your email address
-- `subdomain.domain.tld`: Your domain name where Education will be hosted
+- `subdomain.domain.tld`: Your domain name where EduNex will be hosted
 
-The script will set up a production-ready instance of Frappe Education with all
+The script will set up a production-ready instance of EduNex with all
 the necessary configurations in about 5 minutes.
 
 ## Development Setup
