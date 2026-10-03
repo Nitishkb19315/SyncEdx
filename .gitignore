@@ -3,11 +3,11 @@
 *.egg-info
 *.swp
 tags
-education/docs/current
+edunex/docs/current
 dist/
 __pycache__/
 node_modules
-education/public/frontend
-education/www/education.html
-education/www/student-portal.html
+edunex/public/frontend
+edunex/www/edunex.html
+edunex/www/student-portal.html
 ./node_modules

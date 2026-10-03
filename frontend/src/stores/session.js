@@ -5,7 +5,7 @@ import router from '@/router'
 import { ref, computed } from 'vue'
 import { studentStore } from '@/stores/student'
 
-export const sessionStore = defineStore('education-session', () => {
+export const sessionStore = defineStore('edunex-session', () => {
   const { user: currentUser } = usersStore()
   const { student } = studentStore()
 

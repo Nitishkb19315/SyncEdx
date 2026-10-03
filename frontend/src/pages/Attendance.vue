@@ -113,7 +113,7 @@ const attendanceStatus = {
 }
 
 const attendanceResource = createResource({
-  url: 'education.education.api.get_student_attendance',
+  url: 'edunex.edunex.api.get_student_attendance',
   params: {
     student_group: selectedGroup.value,
     student: studentInfo.name,
@@ -144,7 +144,7 @@ const attendanceResource = createResource({
 })
 
 const applyLeave = createResource({
-  url: 'education.education.api.apply_leave',
+  url: 'edunex.edunex.api.apply_leave',
   params: {
     leave_data: newLeave,
     program_name: programName.value,

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/assets/edunex/frontend/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduNex</title>
+    <script type="module" crossorigin src="/assets/edunex/frontend/assets/index.344e20c1.js"></script>
+    <link rel="modulepreload" href="/assets/edunex/frontend/assets/frappe-ui.7585a3e1.js">
+    <link rel="stylesheet" href="/assets/edunex/frontend/assets/frappe-ui.005832b0.css">
+    <link rel="stylesheet" href="/assets/edunex/frontend/assets/index.c58fdabf.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="modals"></div>
+    <div id="popovers"></div>
+
+    <script>
+      window.csrf_token = '{{ frappe.session.csrf_token }}'
+      window.document.title = '{{ abbr }}'
+      let link = document.querySelector("link[rel~='icon']");
+      if (!link) {
+        link = document.createElement('link');
+        link.rel = 'icon';
+        document.getElementsByTagName('head')[0].appendChild(link);
+      }
+      link.href = '{{ logo }}'
+    </script>
+    
+  </body>
+</html>

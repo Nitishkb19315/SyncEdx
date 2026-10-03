@@ -2,9 +2,9 @@ import { defineStore } from 'pinia'
 import { createResource } from 'frappe-ui'
 import router from '@/router'
 
-export const usersStore = defineStore('education-users', () => {
+export const usersStore = defineStore('edunex-users', () => {
   const user = createResource({
-    url: 'education.education.api.get_user_info',
+    url: 'edunex.edunex.api.get_user_info',
     cache: 'User',
     initialData: [],
     onError(error) {

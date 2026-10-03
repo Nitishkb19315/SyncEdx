@@ -1,7 +1,7 @@
 [project]
-name = "education"
+name = "edunex"
 authors = [
-    { name = "Frappe Technologies Pvt. Ltd.", email = "hello@frappe.io"}
+    { name = "SyncMind", email = "hello@syncmind.com"}
 ]
 description = "EduNex module for Frappe"
 requires-python = ">=3.10"

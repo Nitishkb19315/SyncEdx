@@ -13,8 +13,8 @@
       >
         <div class="w-8 h-8 rounded-full flex items-center justify-center">
           <Avatar
-            v-if="educationSettings?.logo"
-            :image="educationSettings?.logo"
+            v-if="edunexSettings?.logo"
+            :image="edunexSettings?.logo"
             shape="circle"
             size="xl"
           />
@@ -29,7 +29,7 @@
           "
         >
           <div class="text-base font-medium text-gray-900 leading-none">
-            {{ educationSettings?.name || 'EduNex' }}
+            {{ edunexSettings?.name || 'EduNex' }}
           </div>
           <div class="mt-1 text-sm text-gray-700 leading-none">
             {{ user.data.full_name }}
@@ -75,7 +75,7 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
-  educationSettings: {},
+  edunexSettings: {},
 })
 
 const showProfileDialog = ref(false)

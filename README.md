@@ -136,11 +136,11 @@ wget https://frappe.io/easy-install.py
 
 ```bash
 python3 ./easy-install.py deploy \
-    --project=education_prod_setup \
+    --project=edunex_prod_setup \
     --email=your_email.example.com \
-    --image=ghcr.io/frappe/education \
+    --image=ghcr.io/syncmind/edunex \
     --version=stable \
-    --app=education \
+    --app=edunex \
     --sitename subdomain.domain.tld
 ```
 
@@ -159,21 +159,21 @@ the necessary configurations in about 5 minutes.
 1. Install bench and setup a `frappe-bench` directory by following the
    [Installation Steps](https://frappeframework.com/docs/user/en/installation)
 1. Install ERPNext by running `bench get-app erpnext`
-1. Once ERPNext is installed, install the Education App by using
-   `bench get-app education`
+1. Once ERPNext is installed, install the EduNex App by using
+   `bench get-app edunex`
 
 1. In a separate terminal window, create a new site by running
-   `bench new-site education.test`
+   `bench new-site edunex.test`
 1. Map your site to localhost with the command
-   `bench --site education.test add-to-hosts`
-1. After that, you can install the Education app on the required site by running
+   `bench --site edunex.test add-to-hosts`
+1. After that, you can install the EduNex app on the required site by running
    ```jsx
-   $ bench --site sitename install-app education
+   $ bench --site sitename install-app edunex
    ```
-1. Now open the URL `http://education.test:8000/education` in your browser, you
+1. Now open the URL `http://edunex.test:8000/app/edunex` in your browser, you
    should see the app running
 1. To access student portal, open the URL
-   `http://education.test:8000/student-portal` in your browser, you should see
+   `http://edunex.test:8000/student-portal` in your browser, you should see
    the student portal running.
 
 ### Docker
@@ -184,21 +184,21 @@ steps:
 
 **Step 1**: Setup folder and download the required files
 
-    mkdir frappe-education
-    cd frappe-education
+    mkdir frappe-edunex
+    cd frappe-edunex
 
     # Download the docker-compose file
-    wget -O docker-compose.yml https://raw.githubusercontent.com/frappe/education/develop/docker/docker-compose.yml
+    wget -O docker-compose.yml https://raw.githubusercontent.com/SyncMind/EduNex/develop/docker/docker-compose.yml
 
     # Download the setup script
-    wget -O init.sh https://raw.githubusercontent.com/frappe/education/develop/docker/init.sh
+    wget -O init.sh https://raw.githubusercontent.com/SyncMind/EduNex/develop/docker/init.sh
 
 **Step 2**: Run the container and daemonize it
 
     docker compose up -d
 
 **Step 3**: The site
-[http://education.localhost:8000/](http://education.localhost:8000) should now
+[http://edunex.localhost:8000/](http://edunex.localhost:8000) should now
 be available. The default credentials are:
 
 - Username: Administrator
