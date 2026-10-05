@@ -82,8 +82,7 @@
         </div>
       </div>
       <!-- <div class=" w-20 h-20 bg-orange-400 absolute top-[212px] left">
-				
-			</div> -->
+      </div> -->
     </div>
   </div>
 </template>
