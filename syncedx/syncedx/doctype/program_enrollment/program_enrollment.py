@@ -66,7 +66,6 @@ class ProgramEnrollment(Document):
 
 		create_so = (
 			frappe.db.get_single_value("SyncEdx Settings", "create_so")
-			or frappe.db.get_single_value("EduNex Settings", "create_so")
 			or frappe.db.get_single_value("Education Settings", "create_so")
 		)
 

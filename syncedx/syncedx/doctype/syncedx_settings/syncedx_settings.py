@@ -13,7 +13,6 @@ syncedx_keydict = {
 	"validate_batch": "validate_batch",
 	"validate_course": "validate_course",
 }
-edunex_keydict = syncedx_keydict
 education_keydict = syncedx_keydict
 
 
@@ -53,5 +52,4 @@ class SyncEdxSettings(Document):
 
 
 # Compatibility aliases
-EduNexSettings = SyncEdxSettings
 EducationSettings = SyncEdxSettings

@@ -12,7 +12,6 @@ class Instructor(Document):
 	def autoname(self):
 		naming_method = (
 			frappe.db.get_single_value("SyncEdx Settings", "instructor_created_by")
-			or frappe.db.get_single_value("EduNex Settings", "instructor_created_by")
 			or frappe.db.get_single_value("Education Settings", "instructor_created_by")
 		)
 		if not naming_method:

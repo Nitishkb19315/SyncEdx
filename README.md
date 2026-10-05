@@ -188,10 +188,10 @@ steps:
     cd frappe-syncedx
 
     # Download the docker-compose file
-    wget -O docker-compose.yml https://raw.githubusercontent.com/SyncMind/EduNex/develop/docker/docker-compose.yml
+    wget -O docker-compose.yml https://raw.githubusercontent.com/SyncMind/SyncEdx/develop/docker/docker-compose.yml
 
     # Download the setup script
-    wget -O init.sh https://raw.githubusercontent.com/SyncMind/EduNex/develop/docker/init.sh
+    wget -O init.sh https://raw.githubusercontent.com/SyncMind/SyncEdx/develop/docker/init.sh
 
 **Step 2**: Run the container and daemonize it
 

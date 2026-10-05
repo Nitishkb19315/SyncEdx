@@ -1,7 +1,6 @@
 // Copyright (c) 2016, Frappe Technologies Pvt. Ltd. and contributors
 // For license information, please see license.txt
 frappe.provide('syncedx')
-frappe.provide('edunex')
 const education = syncedx
 
 frappe.ui.form.on('Student Attendance Tool', {
@@ -220,6 +219,3 @@ syncedx.StudentsEditor = class StudentsEditor {
     )
   }
 }
-
-edunex.StudentsEditor = syncedx.StudentsEditor
-

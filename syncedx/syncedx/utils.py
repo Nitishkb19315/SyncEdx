@@ -172,7 +172,6 @@ def has_super_access():
 			"Administrator",
 			"Instructor",
 			"SyncEdx Manager",
-			"EduNex Manager",
 			"Education Manager",
 			"System Manager",
 			"Academic User",

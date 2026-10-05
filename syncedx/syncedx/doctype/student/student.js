@@ -24,12 +24,6 @@ frappe.ui.form.on('Student', {
       .get_single_value('SyncEdx Settings', 'user_creation_skip')
       .then((r) => {
         if (r === null || r === undefined) {
-          return frappe.db.get_single_value('EduNex Settings', 'user_creation_skip')
-        }
-        return r
-      })
-      .then((r) => {
-        if (r === null || r === undefined) {
           return frappe.db.get_single_value('Education Settings', 'user_creation_skip')
         }
         return r

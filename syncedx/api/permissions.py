@@ -7,7 +7,7 @@ def has_app_permission():
 		return True
 
 	roles = frappe.get_roles()
-	allowed_roles = ["SyncEdx Manager", "EduNex Manager", "Education Manager", "Academics User", "System Manager"]
+	allowed_roles = ["SyncEdx Manager", "Education Manager", "Academics User", "System Manager"]
 	if any(role in roles for role in allowed_roles):
 		return True
 

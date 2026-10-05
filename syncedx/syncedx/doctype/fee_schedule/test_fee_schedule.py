@@ -89,8 +89,6 @@ class TestFeeSchedule(FrappeTestCase):
 		# create_so from settings set to 1
 		if frappe.db.exists("DocType", "SyncEdx Settings"):
 			settings_doctype = "SyncEdx Settings"
-		elif frappe.db.exists("DocType", "EduNex Settings"):
-			settings_doctype = "EduNex Settings"
 		else:
 			settings_doctype = "Education Settings"
 		frappe.db.set_value(settings_doctype, settings_doctype, "create_so", 1)
