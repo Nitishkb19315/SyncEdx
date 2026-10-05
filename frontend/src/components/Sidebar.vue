@@ -7,8 +7,8 @@
       <UserDropdown
         class="p-2"
         :isCollapsed="isSidebarCollapsed"
-        :edunexSettings="
-          !edunexSettings.loading && edunexSettings.data
+        :syncedxSettings="
+          !syncedxSettings.loading && syncedxSettings.data
         "
       />
       <div class="flex flex-col overflow-y-auto">
@@ -98,8 +98,8 @@ const links = [
 const isSidebarCollapsed = useStorage('sidebar_is_collapsed', false)
 
 // create a resource which call the function get_school_abbr_logo in api file using createResource
-const edunexSettings = createResource({
-  url: 'edunex.edunex.api.get_school_abbr_logo',
+const syncedxSettings = createResource({
+  url: 'syncedx.syncedx.api.get_school_abbr_logo',
   auto: true,
 })
 </script>

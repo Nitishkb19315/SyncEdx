@@ -12,7 +12,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: path.resolve(__dirname, '../edunex/public/frontend'),
+    outDir: path.resolve(__dirname, '../syncedx/public/frontend'),
     emptyOutDir: true,
     target: 'es2015',
     rollupOptions: {

@@ -2,13 +2,13 @@ import { defineStore } from 'pinia'
 import { ref } from 'vue'
 import { createResource } from 'frappe-ui'
 
-export const studentStore = defineStore('edunex-student', () => {
+export const studentStore = defineStore('syncedx-student', () => {
   const studentInfo = ref({})
   const currentProgram = ref({})
   const studentGroups = ref([])
 
   const student = createResource({
-    url: 'edunex.edunex.api.get_student_info',
+    url: 'syncedx.syncedx.api.get_student_info',
     onSuccess(info) {
       if (!info) {
         window.location.href = '/app'

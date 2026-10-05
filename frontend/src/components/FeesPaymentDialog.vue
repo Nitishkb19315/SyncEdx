@@ -94,7 +94,7 @@ onMounted(() => {
 })
 
 const paymentOptions = createResource({
-  url: 'edunex.edunex.billing.get_payment_options',
+  url: 'syncedx.syncedx.billing.get_payment_options',
   makeParams(values) {
     return {
       doctype: 'Sales Invoice',
@@ -106,11 +106,11 @@ const paymentOptions = createResource({
 })
 
 const paymentSuccessResource = createResource({
-  url: 'edunex.edunex.billing.handle_payment_success',
+  url: 'syncedx.syncedx.billing.handle_payment_success',
 })
 
 const paymentFailureResource = createResource({
-  url: 'edunex.edunex.billing.handle_payment_failure',
+  url: 'syncedx.syncedx.billing.handle_payment_failure',
 })
 
 function openPaymentGateway(close) {

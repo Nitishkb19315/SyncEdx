@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 
-export const leaveStore = defineStore('edunex-leave', () => {
+export const leaveStore = defineStore('syncedx-leave', () => {
   const isAttendancePage = ref(false)
 
   const setIsAttendancePage = (value) => {

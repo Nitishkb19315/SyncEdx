@@ -1,12 +1,12 @@
 {
-  "name": "edunex-frontend",
+  "name": "syncedx-frontend",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/assets/edunex/frontend/ && yarn copy-html-entry",
+    "build": "vite build --base=/assets/syncedx/frontend/ && yarn copy-html-entry",
     "preview": "vite preview",
-    "copy-html-entry": "cp ../edunex/public/frontend/index.html ../edunex/www/student-portal.html"
+    "copy-html-entry": "cp ../syncedx/public/frontend/index.html ../syncedx/www/student-portal.html"
   },
   "dependencies": {
     "dayjs": "^1.11.10",

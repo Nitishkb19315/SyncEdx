@@ -1,8 +1,8 @@
 <div align="center" markdown="1">
 
-<img src=".github/edu-logo.svg" alt="EduNex Logo" width="80">
+<img src=".github/edu-logo.svg" alt="SyncEdx Logo" width="80">
 
-<h1>EduNex</h1>
+<h1>SyncEdx</h1>
 
 **Empowering Schools with Smarter Management**
 
@@ -21,9 +21,9 @@
 	<a href="https://docs.frappe.io/education">Documentation</a>
 </div>
 
-## EduNex
+## SyncEdx
 
-EduNex is an open-source and user-friendly Education Management System
+SyncEdx is an open-source and user-friendly Education Management System
 designed to streamline the administrative and academic processes of educational
 institutions. It is a powerful module based on the ERPNext software.
 
@@ -32,7 +32,7 @@ institutions. It is a powerful module based on the ERPNext software.
 All the tools to manage which are available in the market were just not good
 enough.They were way too scatered, or too expensive or too complex to use. We
 wanted to create a tool that is easy to use, affordable and can be customized as
-per the needs of the institution. EduNex is dedicated to making
+per the needs of the institution. SyncEdx is dedicated to making
 education management more efficient and less time-consuming.
 
 ### Key Features
@@ -124,7 +124,7 @@ with an ability to manage and control multiple Frappe deployments.
 
 ### Self Hosting
 
-Follow these steps to set up EduNex in production:
+Follow these steps to set up SyncEdx in production:
 
 **Step 1**: Download the easy install script
 
@@ -136,20 +136,20 @@ wget https://frappe.io/easy-install.py
 
 ```bash
 python3 ./easy-install.py deploy \
-    --project=edunex_prod_setup \
+    --project=syncedx_prod_setup \
     --email=your_email.example.com \
-    --image=ghcr.io/syncmind/edunex \
+    --image=ghcr.io/syncmind/syncedx \
     --version=stable \
-    --app=edunex \
+    --app=syncedx \
     --sitename subdomain.domain.tld
 ```
 
 Replace the following parameters with your values:
 
 - `your_email.example.com`: Your email address
-- `subdomain.domain.tld`: Your domain name where EduNex will be hosted
+- `subdomain.domain.tld`: Your domain name where SyncEdx will be hosted
 
-The script will set up a production-ready instance of EduNex with all
+The script will set up a production-ready instance of SyncEdx with all
 the necessary configurations in about 5 minutes.
 
 ## Development Setup
@@ -159,21 +159,21 @@ the necessary configurations in about 5 minutes.
 1. Install bench and setup a `frappe-bench` directory by following the
    [Installation Steps](https://frappeframework.com/docs/user/en/installation)
 1. Install ERPNext by running `bench get-app erpnext`
-1. Once ERPNext is installed, install the EduNex App by using
-   `bench get-app edunex`
+1. Once ERPNext is installed, install the SyncEdx App by using
+   `bench get-app syncedx`
 
 1. In a separate terminal window, create a new site by running
-   `bench new-site edunex.test`
+   `bench new-site syncedx.test`
 1. Map your site to localhost with the command
-   `bench --site edunex.test add-to-hosts`
-1. After that, you can install the EduNex app on the required site by running
+   `bench --site syncedx.test add-to-hosts`
+1. After that, you can install the SyncEdx app on the required site by running
    ```jsx
-   $ bench --site sitename install-app edunex
+   $ bench --site sitename install-app syncedx
    ```
-1. Now open the URL `http://edunex.test:8000/app/edunex` in your browser, you
+1. Now open the URL `http://syncedx.test:8000/app/syncedx` in your browser, you
    should see the app running
 1. To access student portal, open the URL
-   `http://edunex.test:8000/student-portal` in your browser, you should see
+   `http://syncedx.test:8000/student-portal` in your browser, you should see
    the student portal running.
 
 ### Docker
@@ -184,8 +184,8 @@ steps:
 
 **Step 1**: Setup folder and download the required files
 
-    mkdir frappe-edunex
-    cd frappe-edunex
+    mkdir frappe-syncedx
+    cd frappe-syncedx
 
     # Download the docker-compose file
     wget -O docker-compose.yml https://raw.githubusercontent.com/SyncMind/EduNex/develop/docker/docker-compose.yml
@@ -198,7 +198,7 @@ steps:
     docker compose up -d
 
 **Step 3**: The site
-[http://edunex.localhost:8000/](http://edunex.localhost:8000) should now
+[http://syncedx.localhost:8000/](http://syncedx.localhost:8000) should now
 be available. The default credentials are:
 
 - Username: Administrator

@@ -25,19 +25,19 @@ sed -i '/redis/d' ./Procfile
 sed -i '/watch/d' ./Procfile
 
 bench get-app erpnext
-bench get-app edunex
+bench get-app syncedx
 
-bench new-site edunex.localhost \
+bench new-site syncedx.localhost \
 --force \
 --mariadb-root-password 123 \
 --admin-password admin \
 --no-mariadb-socket
 
-bench --site edunex.localhost install-app erpnext
-bench --site edunex.localhost install-app edunex
-bench --site edunex.localhost set-config developer_mode 1
-bench --site edunex.localhost enable-scheduler
-bench --site edunex.localhost clear-cache
-bench use edunex.localhost
+bench --site syncedx.localhost install-app erpnext
+bench --site syncedx.localhost install-app syncedx
+bench --site syncedx.localhost set-config developer_mode 1
+bench --site syncedx.localhost enable-scheduler
+bench --site syncedx.localhost clear-cache
+bench use syncedx.localhost
 
 bench start

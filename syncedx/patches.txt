@@ -1,0 +1,18 @@
+[pre_model_sync]
+syncedx.patches.v14_0.create_student_party_type
+
+[post_model_sync]
+syncedx.patches.v14_0.create_parent_assessment_group #01-01-2022
+syncedx.patches.v14_0.lms_deprecation_message #22-12-2022
+syncedx.patches.v14_0.student_name
+syncedx.patches.v14_0.delete_lms_user_role
+syncedx.patches.v15_0.fees_student_email
+syncedx.patches.v15_0.student_role_desk_access
+syncedx.patches.v15_0.sales_invoice_student_field
+syncedx.patches.v15_0.create_parent_assessment_group
+syncedx.patches.v15_0.student_role_permission_sales_invoice
+syncedx.patches.v15_0.sales_order_student_field
+syncedx.patches.v15_0.fee_schedule_status_update #28-03-2024
+syncedx.patches.v15_0.create_fee_component_item_group
+syncedx.patches.v15_0.create_student_customer_group
+syncedx.patches.v15_0.create_custom_permissions

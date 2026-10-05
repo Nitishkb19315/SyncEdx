@@ -84,7 +84,7 @@ const { getStudentInfo } = studentStore()
 let studentInfo = getStudentInfo().value
 
 const feesResource = createResource({
-  url: 'edunex.edunex.api.get_student_invoices',
+  url: 'syncedx.syncedx.api.get_student_invoices',
   params: {
     student: studentInfo.name,
   },

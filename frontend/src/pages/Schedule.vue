@@ -19,7 +19,7 @@ const studentGroup = ref(getStudentGroups().value)
 const events = ref([])
 
 const scheduleResource = createResource({
-  url: 'edunex.edunex.api.get_course_schedule_for_student',
+  url: 'syncedx.syncedx.api.get_course_schedule_for_student',
   params: {
     program_name: programName.value,
     student_groups: studentGroup.value,

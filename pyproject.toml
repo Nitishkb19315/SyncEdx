@@ -1,9 +1,9 @@
 [project]
-name = "edunex"
+name = "syncedx"
 authors = [
     { name = "SyncMind", email = "hello@syncmind.com"}
 ]
-description = "EduNex module for Frappe"
+description = "SyncEdx module for Frappe"
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]
